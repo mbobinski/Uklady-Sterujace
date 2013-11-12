@@ -51,7 +51,7 @@
 	POP XH
 	POP XL
 
-	//Zapis do pamiêci flash napisu
+	//Zapis do pamieci flash napisu
 	.CSEG
 	.org FLASHEND - 0x100
 
