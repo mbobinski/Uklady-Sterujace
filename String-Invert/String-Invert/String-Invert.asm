@@ -4,16 +4,16 @@
  *  Created: 2013-11-12 17:22:02
  *   Author: Mateusz
  */ 
-	//Inicjalizacja stosu
+	// Inicjalizacja stosu
 	LDI R16,low(RAMEND)
 	OUT	SPL,R16
 	LDI R16,high(RAMEND)	
 	OUT SPH, R16
 
-	//Miejsce w ktorym odwrocony napis bedzie przechowywany
+	// Miejsce w ktorym odwrocony napis bedzie przechowywany
 	LDI XL, 0x00
 	LDI XH, 0x01
-	//Miejsce w pamieci flash w ktorym napis jest zapisany
+	// Miejsce w pamieci flash w ktorym napis jest zapisany
 	LDI ZL, low(2 * NAPIS)
 	LDI ZH, high(2 * NAPIS)
 
@@ -25,10 +25,10 @@
 	PUSH XH
 	PUSH ZL
 	PUSH ZH
-	//Wrzuceni pomocniczego 0
+	// Wrzucenie na stos pomocniczego 0
 	PUSH tmp
 	
-	//Wrzucanie na stos kolejnych liter slowa, az do otrzymania 0
+	// Wrzucenie na stos kolejnych liter slowa, az do otrzymania 0
 	INVERT:
 	LPM tmp, Z+ 
 	CPI tmp, 0
@@ -36,7 +36,7 @@
 	PUSH tmp
 	JMP INVERT
 
-	//Sciaganie kolejnych liter slowa, az do otrzymania 0, ktore bylo wrzucone jako pomocnicze przed petla INVERT
+	// Sciaganie kolejnych liter slowa, az do otrzymania 0, ktore bylo wrzucone jako pomocnicze przed petla INVERT
 	COPY:
 	POP tmp
 	CPI tmp, 0
@@ -45,7 +45,7 @@
 	JMP COPY
 
 	END:
-	//Odzyskanie stanu rejestrow
+	// Odzyskanie stanu rejestrow
 	POP ZH
 	POP ZL
 	POP XH
