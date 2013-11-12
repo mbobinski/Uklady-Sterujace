@@ -1,0 +1,29 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.52</VERSION>
+ <DEVICE>"ATmega32"</DEVICE>
+ <WORKING_DIR>C:\Users\Mateusz\Documents\Atmel Studio\6.1\String-Invert\String-Invert\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.39.1005\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Mateusz\Documents\Atmel Studio\6.1\String-Invert\String-Invert\String-Invert.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.39.1005\avrassembler\Include\m32def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Mateusz\Documents\Atmel Studio\6.1\String-Invert\String-Invert\Debug/String-Invert.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>String-Invert.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>String-Invert.map</FILE>
+  <FILE>String-Invert.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <NAPIS><FILE>C:\Users\Mateusz\Documents\Atmel Studio\6.1\String-Invert\String-Invert\String-Invert.asm</FILE><LINE>58</LINE></NAPIS>
+  <INVERT><FILE>C:\Users\Mateusz\Documents\Atmel Studio\6.1\String-Invert\String-Invert\String-Invert.asm</FILE><LINE>32</LINE></INVERT>
+  <COPY><FILE>C:\Users\Mateusz\Documents\Atmel Studio\6.1\String-Invert\String-Invert\String-Invert.asm</FILE><LINE>40</LINE></COPY>
+  <END><FILE>C:\Users\Mateusz\Documents\Atmel Studio\6.1\String-Invert\String-Invert\String-Invert.asm</FILE><LINE>47</LINE></END>
+ </LABELS>
+</ASSEMBLER_INFO>
